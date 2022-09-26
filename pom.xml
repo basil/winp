@@ -46,6 +46,10 @@
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
+              <includes>
+                <include>**/*Benchmark.java</include>
+                <include>**/Benchmark*.java</include>
+              </includes>
             <argLine>-XX:+CreateCoredumpOnCrash</argLine>
         </configuration>
       </plugin>
